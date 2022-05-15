@@ -1,0 +1,196 @@
+
+/* DASH BOARD */
+
+
+#db-Container {
+}
+
+#dbValues-Container {
+    width: 70%;
+    height: 170px;
+/*    background: red;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dbValues-Frame {
+    width: 200px;
+    height: 115px;
+    box-shadow: 1px 0px 6px 0px #c7a8a8;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.dbTitle-Frame {
+    margin: auto;
+    width: 84%;
+    position: relative;
+    top: 15px;
+    color: white;
+}
+
+.dbTitle-Frame i {
+    float: right;
+}
+
+
+.dbValue-Frame {
+    position: relative;
+    top: 25px;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: serif;
+}
+
+
+
+.dbStatus-Frame {
+    position: relative;
+    top: 35px;
+    margin: auto;
+    width: calc(100% - 20px);
+    background-color: rgb(255 255 255 / 50%);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+.dbstatus {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.positive {
+    color: #09a709;
+}
+
+.negative {
+    color: #a70909;
+}
+
+.dbTime {
+    font-size: 10px;
+    color: grey;
+    width: 100px;
+    float: right;
+    bottom: 10px;
+    position: relative;
+}
+
+
+.clientsFrame {
+    background-color: #4472c4;
+}
+
+.attendanceFrame {
+    background-color: #ed7d31;
+}
+.paysFrame {
+    background-color: #a5a5a5;
+}
+.test3 {
+    background-color: #ffc000;
+}
+
+
+/**/
+
+
+#dbHours-Container {
+    width: 70%;
+    height: 300px;
+/*    background: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dbHours-Content {
+    width: 40%;
+    margin: 20px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 6px 0px #c7a8a8;
+}
+
+.dbHours-Test {
+    background-color: rgb(150 219 169);
+}
+
+.dbHours-Test1 {
+    background-color: rgb(150, 155, 219);
+}
+
+.dbHours-Title {
+    position: relative;
+    top: 5px;
+    margin: auto;
+    width: calc(100% - 20px);
+    background-color: rgb(255 255 255 / 50%);
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 4px black;
+}
+
+.dbHours-Frame {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    height: 80%;
+    overflow: auto;
+    word-break: break-all;
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 4px;
+}
+
+
+.dbHours-Table {
+    width: 100%;
+    text-align: center;
+} 
+
+.dbHours-Table tr th {
+    border-right: 1px solid #b99d9d;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    text-shadow: 0px 0px 3px rgb(94 83 83 / 70%);
+    border-radius: 0px;
+    background-color: rgb(165, 165, 165, 100%);
+}
+
+.dbHours-Table tr td {
+    border-right: 1px solid #b99d9d;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    text-shadow: 0px 0px 3px rgb(94 83 83 / 70%);
+    border-radius: 0px;
+}
+
+.dbHours-Table tr:hover:not(.dbHours-Table tr:nth-child(1)) {
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+
+
+.dbHours-Table tr:nth-child(2n+1) {
+    background-color: rgb(165, 165, 165, 60%);
+}
+
+.dbHours-Table tr:nth-child(2n) {
+    background-color: rgb(165, 165, 165, 40%);
+}
+
+
+

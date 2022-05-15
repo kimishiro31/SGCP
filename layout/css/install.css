@@ -1,0 +1,174 @@
+* , body {
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/install/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+}
+
+
+/*
+header {
+    background-color: #93d8f7;
+    width: 100%;
+    height: 50px;
+}*/
+
+#inst-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#inst-Content {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(239 239 239 / 50%);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+ }
+
+#logo-Frame {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #c5b9bb;
+}
+
+#logo-Frame img {
+    width: 100%;
+    height: 100%;
+    image-rendering: initial;
+}
+
+/*BOXS*/
+#box-close {
+    color: #2c3860;
+    font-weight: bold;
+    font-size: 20px;
+    width: 30px;
+    /* height: 30px; */
+    background-color: unset;
+    border: unset;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#box-close:hover {
+    background-color: #ffc8c8;
+    border: 1px solid #440c0c;
+	cursor: pointer;
+}
+
+#box-error {
+    border: 1px solid #900404;
+    padding: 5px;
+    top: 119px;
+    width: 400px;
+    background-color: #ff9e9e;
+    border-radius: 2px;
+    z-index: 10;
+    position: fixed;
+    color: black;
+    cursor: inherit;
+    max-height: 300px;
+    overflow: auto;
+}
+
+#box-error {
+	animation-name: transparent;
+	animation-duration: 2s;
+	animation-direction: normal;
+    left: calc(50% - 200px);
+}
+
+
+/* REMOVE ELEMENTOS */
+
+li {
+    list-style: none;
+}
+
+
+#bar-Container {
+    margin: 10px auto;
+    width: 80%;
+    height: 80px;
+}
+
+#bar-Background {
+    position: relative;
+    width: 90%;
+    height: 30%;
+    background-color: #bfb9b9;
+    margin: 0px auto;
+}
+
+#firstBar {
+    left: -20px;
+}
+
+#secondBar {
+    left: 250px;
+}
+
+#thirdBar {
+    left: 520px;
+}
+
+#lastBar {
+    left: 805px;
+}
+
+.notOk {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: -20px;
+    background-color: #bfb9b9;
+    border: 2px solid #0096d7;
+}
+
+.ok {
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: -20px;
+    background-color: #0096d7;
+    border: 1px solid white;
+    filter: drop-shadow(-1px 1px 5px white);
+}
+
+.negative {
+    position: relative;
+    margin: auto;
+    top: 20px;
+}
+
+.fa {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.disabled {
+    display: none;
+}
+
+
+#secondContent, #thirdContent, #lastContent {
+    display: none;
+}

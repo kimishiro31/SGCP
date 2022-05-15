@@ -1,0 +1,192 @@
+
+.tinyInputTxt, .tinySelectInp {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-color: #788389;
+    font-family: Open Sans, Sans-Serif, Arial, Helvetica;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.smallInputTxt, .mediumInputTxt, .bigInputTxt, .smallSelectInp, .mediumSelectInp, .bigSelectInp {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-color: #788389;
+    font-family: Open Sans, Sans-Serif, Arial, Helvetica;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 0px 10px;
+}
+
+
+
+.tinyInputTxt:focus, .smallInputTxt:focus, .mediumInputTxt:focus, .bigInputTxt:focus {
+    background-color: ##ffd60b;
+    box-shadow: 0px 0px 3px 2px #3a3838;
+    font-family: cursive;
+    font-size: 11px;
+}
+
+.tinyInputTxt, .tinySelectInp {
+    width: 70px;
+}
+
+.smallInputTxt, .smallSelectInp {
+    width: 120px;
+}
+
+.mediumInputTxt, .mediumSelectInp {
+    width: 220px;
+}
+
+.bigInputTxt, .bigSelectInput {
+    width: 320px;
+}
+
+.tinySelectInp, .smallSelectInp, .mediumSelectInp, .bigSelectInp {
+    background-color: #ffffff;
+    font-size: 11px;
+}
+
+.tinySelectInp:focus, .smallSelectInp:focus, .mediumSelectInp:focus, .bigSelectInp:focus {
+    box-shadow: 0px 0px 3px 2px #3a3838;
+    font-family: cursive;
+    font-size: 11px;
+}
+
+.dateInput {
+    background-color: #ffffff;
+    border: 1px solid #dddfe2;
+    border-color: #788389;
+    font-family: Open Sans, Sans-Serif, Arial, Helvetica;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 0px 10px;
+}
+
+
+
+/*
+ BOTÕES
+ 
+*/
+.enterButton {
+    font-family: inherit;
+    TEXT-TRANSFORM: UPPERCASE;
+    text-decoration: none;
+    background-color: #36a420;
+    border-color: #36a420;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.enterButton:hover {
+    filter: drop-shadow(0px 0px 4px green);
+}
+
+.backButton {
+    font-family: inherit;
+    TEXT-TRANSFORM: UPPERCASE;
+    text-decoration: none;
+    background-color: #a42020;
+    border-color: #a42020;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    filter: drop-shadow(0px 0px 4px rgb(128, 0, 0));
+}
+
+.otherButton {
+    font-family: inherit;
+    TEXT-TRANSFORM: UPPERCASE;
+    text-decoration: none;
+    background-color: #204aa4;
+    border-color: #204aa4;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.otherButton:hover {
+    filter: drop-shadow(0px 0px 4px rgb(0, 70, 128));
+}
+
+.comumButton {
+    padding: 10px;
+    border: 2px solid green;
+    border-image-slice: 1;
+    border-width: 2px 2px 2px 2px;
+    border-image-source: linear-gradient(to left, #c84315, #ffe100, #c84315);
+    cursor: pointer;
+}
+
+.comumButton:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(2px 4px 6px black);
+    cursor: pointer;
+}
+
+
+.iClose {
+    font-size: 20px !important;
+    color: red;
+    margin: 0px 5px;
+}
+
+.iClose:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 2px white;
+}
+
+.iEdit {
+    font-size: 20px !important;
+    color: rgb(118, 144, 214);
+    margin: 0px 5px;
+}
+
+.iEdit:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 2px white;
+}
+
+/* REMOVE */
+
+.buttonFilter {
+    background-color: none;
+    background-color: transparent;
+    border: none;
+    box-sizing: unset;
+    appearance: none;
+    user-select: none;
+    white-space: normal;
+    align-items: normal;
+    text-align: normal;
+}

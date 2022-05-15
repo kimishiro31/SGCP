@@ -1,0 +1,108 @@
+	/* FONTES */
+	@font-face {
+	  font-family: masterpiece;
+	  src: url(./fonts/masterpiece.ttf);
+	}
+	
+	@font-face {
+	  font-family: best_in_class;
+	  src: url(./fonts/best_in_class.ttf);
+	}
+	
+	@font-face {
+	  font-family: stoNe;
+	  src: url(./fonts/stoNe.ttf);
+	}
+	
+	@font-face {
+	  font-family: subspace;
+	  src: url(./fonts/subspace.otf);
+	}
+
+	/* BRILHANTE */
+	@keyframes white_Blink {
+	  0% {filter: drop-shadow(0px 0px 5px white);}
+	  25% {filter: drop-shadow(0px 0px 15px white);}
+	  50% {filter: drop-shadow(0px 0px 25px white);}
+	  75% {filter: drop-shadow(0px 0px 35px white);}
+	  100% {filter: drop-shadow(0px 0px 45px white);}
+	}
+
+	.line {
+		border-right: 2px solid rgba(255, 255, 255, 0.75);
+		color: rgba(255, 255, 255, 0.75);
+		font-family: "Special Elite", monospace;
+		text-align: center;
+		margin: 0 auto;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.typing-animation {
+		animation: blinkCursor 500ms steps(40) infinite normal,
+		typing 4s steps(40) 1s normal both;
+	}
+
+	@keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blinkCursor {
+        from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+          border-right-color: transparent;
+        }
+      }
+
+	/* TRANSPARENT */
+	@keyframes transparent {
+	  0% {opacity: 10%;}
+	  25% {transform: 25%;}
+	  50% {transform: 50%;}
+	  75% {transform: 75%;}
+	  100% {transform: 100%;}
+	}	
+	
+	/* BRILHANTE */
+	@keyframes redBlink {
+	  0% {text-shadow: 0px 0px 2px yellow;}
+	  25% {text-shadow: 0px 0px 4px yellow;}
+	  50% {text-shadow: 0px 0px 6px yellow;}
+	  75% {text-shadow: 0px 0px 10px yellow;}
+	  100% {text-shadow: 0px 0px 15px yellow;}
+	}	
+	 /* TREMIDINHA*/
+	 
+	@keyframes treme-model1 {
+	  0% {margin-left: 0;}
+	  25% {margin-left: 2px; margin-top: 2px}
+	  50% {margin-left: 0;}
+	  75% {margin-left: -2px; margin-top: -2px}
+	  100% {margin-left: 0;}
+	}
+	
+	
+	@keyframes treme-model2 {
+	  0% {margin-left: 0;}
+	  25% {margin-left: 2px; margin-top: 4px; margin-right: 2px; margin-bottom: 4px}
+	  50% {margin-left: 0; margin-top: 0px}
+	  75% {margin-left: -2px; margin-top: -5px; margin-right: -2px; margin-bottom: -4px}
+	  100% {margin-left: 0; margin-top: 0px}
+	}
+	
+	@keyframes rotate {
+	  0% {
+		transform: rotate(0);
+	  }
+	  100% {
+		transform: rotate(360deg);
+	  }
+	}
+

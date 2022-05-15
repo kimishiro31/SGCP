@@ -1,0 +1,72 @@
+.imgs {
+    display: none;
+}
+
+.imgSelect {
+    display: flex;
+}
+
+#U-boxBody {
+    z-index: 1000;
+    background-color: rgb(31 42 40 / 50%);
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#U-boxMain {
+    position: relative;
+    /* border: 1px solid; */
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 500px;
+    max-width: 1000px;
+    padding: 10px;
+    background-color: #e3e3e3;
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+    
+#U-boxButton {
+    color: #2c3860;
+    font-weight: bold;
+    font-size: 20px;
+    width: 30px;
+    /* height: 30px; */
+    background-color: unset;
+    border: unset;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#U-boxButton:hover {
+    background-color: #ffc8c8;
+    border: 1px solid #440c0c;
+    cursor: pointer;
+}
+
+#U-boxTitle {
+    text-align: center;
+}
+
+
+.U-title {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#U-borderContent {
+    min-height: 200px;
+    max-height: 380px;
+    min-width: 500px;
+    max-width: 1000px;
+    overflow: auto;
+    word-break: break-all;
+}

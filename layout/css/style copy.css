@@ -1,0 +1,527 @@
+/* TODOS */
+a {
+	color: unset;
+	text-decoration: none;
+}
+/*fim  TODOS */
+
+* , body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f2f5;
+    display: table;
+}
+
+header {
+    position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #202122;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#body {
+    position: relative;
+    width: 1450px;
+    min-height: 200px;
+    margin: auto;
+    height: auto;
+    display: table;
+}
+#menuLeft {
+    width: 320px;
+    background-color: #202122;
+	position: relative;
+	float: left;
+	min-height: 200px;
+	margin-bottom: 60px;
+    height: auto !important;
+    display: block;
+	overflow: hidden;
+}
+
+#registerNav, #servicesNav, #paysNav, #adminNav {
+    width: 300px;
+    padding: 10px 10px;
+    /* border: 1px solid; */
+    /* background: radial-gradient(#ede5e5, #403d3d0a); */
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* color: #6a727a; */
+    cursor: pointer;
+    background: url(/web/layout/btn-menu.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#registerOptions, #servicesOptions, #paysOptions, #adminOptions {
+    display: none;
+}
+
+#registerOptions ul, #servicesOptions ul, #paysOptions ul, #adminOptions ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#registerOptions ul li, #servicesOptions ul li, #paysOptions ul li, #adminOptions ul li {
+    padding: 5px 0px 5px 20px;
+    color: #6a727a;
+}
+
+#registerOptions ul li:hover, #servicesOptions ul li:hover, #paysOptions ul li:hover, #adminOptions ul li:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+#border-content {
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    float: left;
+    width: 1100px;
+    min-height: 200px;
+    height: auto !important;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+#content {
+    position: relative;
+    width: 90%;
+    top: 115px;
+    margin: auto;
+    min-height: 1000px;
+    height: auto !important;
+    display: block;
+    overflow: hidden;
+    background-color: #eae9ea;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px #000000;
+}
+
+footer {
+    position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: #202122;
+}
+
+
+/*FONTAWESOME*/
+.fa-plus-square-o, .fa-minus-square-o {
+    position: relative;
+    top: 6px;
+    float: right;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BOXS*/
+#box-close {
+    color: #bd1111;
+    font-weight: bold;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+	float: right;
+}
+
+
+#box-close:hover {
+    background-color: #ffc8c8;
+    border: 1px solid #440c0c;
+	cursor: pointer;
+}
+
+#box-success {
+    border: 1px solid #049004;
+    padding: 15px;
+    top: 119px;
+    width: 615px;
+    background-color: #aef9ae;
+    border-radius: 10px;
+    z-index: 10;
+    position: fixed;
+    color: black;
+    cursor: inherit;
+}
+
+#box-warning {
+    border: 1px solid #908c04;
+    padding: 15px;
+    top: 119px;
+    width: 615px;
+    background-color: #fffc9e;
+    border-radius: 10px;
+    z-index: 10;
+    position: fixed;
+    color: black;
+    cursor: inherit;
+}
+
+#boxFloat {
+    border: 1px solid #d42a0a;
+    padding: 15px;
+    top: 50px;
+    width: 615px;
+    background-color: #a9957a;
+	/*background-color: #efd0a5;*/
+    border-radius: 10px;
+    z-index: 10;
+    position: fixed;
+/*	overflow: auto;*/
+    color: black;
+    cursor: inherit;
+}
+
+#boxBackground {
+    opacity: 0.5;
+    visibility: visible;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    bottom: 0px;
+    left: 0px;
+    transition: all 10s ease-in 0s;
+}
+*/
+
+#boxTitle {
+    width: 300px;
+    text-align: center;
+    background: radial-gradient(#ffcd4e, #ff9600, #ff3100);
+    border: 1px solid red;
+    padding: 5px;
+    position: absolute;
+    top: -30px;
+    left: 100px;
+}
+
+#boxTitle:before {
+    content: "";
+    position: absolute;
+    left: -21px;
+    top: -1px;
+    border-bottom: 30px solid #de400c;
+    border-left: 20px solid transparent;
+}
+
+#boxTitle:after {
+    content: "";
+    position: absolute;
+    right: -21px;
+    top: -1px;
+    border-bottom: 30px solid #de400c;
+    border-right: 20px solid transparent;
+}
+
+#box-error {
+    border: 1px solid #900404;
+    padding: 15px;
+    top: 119px;
+    width: 500px;
+    background-color: #ff9e9e;
+    border-radius: 10px;
+    z-index: 10;
+    position: fixed;
+    color: black;
+    cursor: inherit;
+}
+
+#box-error, #box-warning, #box-success {
+	animation-name: transparent;
+	animation-duration: 0.7s;
+	animation-direction: normal;
+    left: calc(30% - 50px);
+}
+
+/* USER BORX */
+
+#us-content {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    border: 1px solid grey;
+    overflow: scroll;
+    box-shadow: 0px 0px 3px grey;
+}
+
+.us-imgFrame {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.us-imgFrame img {
+    width: 100%;
+    height: 100%;
+}
+
+#filterContent {
+    width: 500px;
+    margin: auto;
+}
+
+#vw-select li:not(.selected) {
+    list-style: none;
+    float: left;
+    margin: 0px 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #c5c5c5;
+    border-top-color: initial;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: initial;
+    border-right-style: solid;
+    border-right-width: 1px;
+    /* border-bottom-color: initial; */
+    /* border-bottom-style: solid; */
+    /* border-bottom-width: 1px; */
+    border-left-color: initial;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#vw-select li:hover:not(.selected) {
+    background-color: #858585;
+}
+
+
+.selected {
+    list-style: none;
+    float: left;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: context-menu;
+    margin: 0px 10px;
+    padding: 10px;
+    border-top-color: initial;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: initial;
+    border-right-style: solid;
+    border-right-width: 1px;
+    /* border-bottom-color: initial; */
+    /* border-bottom-style: solid; */
+    /* border-bottom-width: 1px; */
+    border-left-color: initial;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#vw-border {
+    border-bottom: 1px solid;
+    clear: both;
+}
+
+.vw-imgFrame {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    image-rendering: pixelated;
+}
+
+.vw-imgFrame img {
+    width: 100%;
+    height: 100%;
+}
+
+.ue-imgFrame {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    image-rendering: pixelated;
+}
+
+.ue-imgFrame img {
+    width: 100%;
+    height: 100%;
+}
+
+/* FICHA ANAMNESE */
+
+
+#anamneseContent {
+    overflow: hidden;
+    word-break: break-all;
+    width: 100%;
+    display: none;
+}
+
+#anamneseHeader {
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+
+#logoFrame {
+	width: 150px;
+    position: relative;
+    margin: auto;
+}
+
+#logoFrame img {
+	width: 100%;
+}
+
+#typeClinic {
+    font-size: 70px;
+    font-family: cursive;
+}
+
+#anamneseHeader {
+    display: flex;
+}
+
+#titleData {
+    margin: auto;
+	text-align: center;
+}
+
+#typeData {
+	font-size: 30px;
+}
+
+#anamneseBody {
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+
+.txtOthers {
+    width: calc(100% - 50px);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#obs-table tr td, #am-table tr td {
+    padding: 0px 10px;
+}
+
+#obs-table tr td {
+    font-size: 9px;
+}
+
+#obs-table tr th, #am-table tr th {
+    background-color: #dfdfdf;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+#plantar, #dorsal {
+    width: 500px;
+    margin: auto;
+}
+
+#plantar img, #dorsal img  {
+	width: 100%;
+}
+
+#anamneseFooter {
+	width: 100%;
+	border-bottom: 2px solid black;
+    display: flex;
+}
+
+#am-table tr td {
+    font-size: 14px;
+    font-family: serif;
+}
+
+.optionYoN {
+    width: 110px;
+    float: right;
+}
+
+/* VISTA PLANTAR */
+
+
+#plantContent, #dorsalContent {
+    overflow: hidden;
+    word-break: break-all;
+    width: 100%;
+    display: none;
+}
+
+#pFrame {
+	width: 100%;
+}
+
+#pdFrame, #peFrame {
+    width: 100%;
+	margin: 10px 5px;
+}
+
+.pDescription {
+    height: 50px;
+    resize: none;
+    width: 100%;
+}
+
+/* AGENDAMENTOS */
+
+#sc-content {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    border: 1px solid grey;
+    overflow: scroll;
+    box-shadow: 0px 0px 3px grey;
+}
+
+/* REMOVE ELEMENTOS */
+
+#schedulingContent {
+    overflow: hidden;
+    word-break: break-all;
+    width: 100%;
+    display: none;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,213 @@
+.tableRegisterUsers {
+    width: 100%;
+    margin: 10px;
+}
+
+.tableRegisterUsers tr td{
+    padding: 10px 0px;
+}
+
+.us-table {
+    width: 100%;
+}
+
+.us-table tr {
+    cursor: pointer;
+}
+
+.us-table tr:nth-child(1) {
+    background-color: #202122;
+    color: white;
+}
+
+.us-table tr:nth-child(2n) {
+    background-color: #a3a5a9;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+
+.us-table tr:nth-child(2n+1):not(.us-table tr:nth-child(1)) {
+    background-color: #c2c5ca;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.us-table tr:hover:not(.us-table tr:nth-child(1)) {
+    background-color: rgb(0, 153, 255);
+}
+
+.vw-table {
+    width: 100%;
+}
+
+.vw-table tr td:nth-child(2n+1) {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.vw-table tr th {
+    background-color: #202122;
+    color: white;
+}
+
+.am-table {
+    width: 100%;
+}
+
+.am-table tr td {
+    padding: 10px 0px;
+}
+
+.sc-table {
+    width: 100%;
+}
+
+.sc-table tr {
+    cursor: pointer;
+}
+
+.sc-table tr:nth-child(1) {
+    background-color: #202122;
+    color: white;
+}
+
+.sc-table tr:nth-child(2n) {
+    background-color: #a3a5a9;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+
+.sc-table tr:nth-child(2n+1):not(.sc-table tr:nth-child(1)) {
+    background-color: #c2c5ca;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.sc-table tr:hover:not(.sc-table tr:nth-child(1)) {
+    background-color: rgb(0, 153, 255);
+}
+
+
+/* CASHDESK */
+
+.cdh-table {
+    width: 100%;
+    text-align: center;
+}
+
+.cdh-table tr {
+    cursor: pointer;
+}
+
+.cdh-table tr:nth-child(1) {
+    background-color: #202122;
+    color: white;
+}
+
+.cdh-table tr:nth-child(2n) {
+    background-color: #a3a5a9;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.cdh-table tr:nth-child(2n+1):not(.cdh-table tr:nth-child(1)) {
+    background-color: #c2c5ca;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.cdh-table tr:hover:not(.cdh-table tr:nth-child(1)) {
+    background-color: rgb(0, 153, 255);
+}
+
+
+
+
+
+
+
+/* PATOLOGIAS */
+
+.pth-table {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pth-table tr {
+    cursor: pointer;
+}
+
+.pth-table tr:nth-child(1) {
+    background-color: #202122;
+    color: white;
+}
+
+.pth-table tr:nth-child(2n) {
+    background-color: #a3a5a9;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+
+.pth-table tr:nth-child(2n+1):not(.pth-table tr:nth-child(1)) {
+    background-color: #c2c5ca;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+
+.pth-table tr:hover:not(.pth-table tr:nth-child(1)) {
+    background-color: rgb(0, 153, 255);
+}
+
+
+
+/*GENERIC TABLE*/
+.generic-table {
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+}
+
+.generic-table tr th {
+    background-color: #202122;
+    color: white;
+}
+
+.generic-table tr:not(.generic-tExclusion) {
+    background-color: #c2c5ca;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.generic-tExclusion {
+    background-color: #7c8087;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.generic-table tr:hover:not(.generic-table tr:nth-child(1)):not(.generic-tExclusion) {
+    background-color: #a3a5a9;
+}

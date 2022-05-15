@@ -1,0 +1,59 @@
+##AuthType Basic: esta linha especifica o tipo de autenticação que você está implementando. Esse tipo irá implementar a autenticação por senha, utilizando um arquivo de senha.
+##AuthName: define a mensagem da caixa de diálogo da autenticação. Você deve manter essas definições com texto vago, no intuito de evitar que usuários não autorizados tenham acesso às informações sobre o que estiver sendo protegido.
+##AuthUserFile: define o local do arquivo de senha que será usado para autenticação. Esse arquivo deve permanecer fora dos diretórios que estão sendo atendidos. Criaremos esse arquivo em breve.
+##Require valid-user: especifica que apenas os usuários autenticados devem receber acesso a este recurso. Isto é o que realmente impede os usuários não autorizados de entrarem.
+
+#Order Deny,Allow
+#Deny from all
+#Allow from 177.131.78.84
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On      
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^$ install/
+RewriteRule ^index$ install/index.php
+
+#RewriteRule ^$ web/
+
+#RewriteRule ^index$ web/index.php
+#RewriteRule ^index/v/(\d+)$ web/index.php?subpage=$1 [QSA]
+
+ReWriteRule ^web/cashdesk$ web/cashdesk.php [NC]
+ReWriteRule ^web/cashierHistory$ web/cashierHistory.php [NC]
+ReWriteRule ^web/cashierOpeningHistory$ web/cashierOpeningHistory.php [NC]
+RewriteRule ^web/index$ web/index.php
+ReWriteRule ^web/logout$ web/logout.php [NC]
+ReWriteRule ^web/myaccount$ web/myaccount.php [NC]
+ReWriteRule ^web/registerUsers$ web/registerUsers.php [NC]
+ReWriteRule ^web/scheduling$ web/scheduling.php [NC]
+ReWriteRule ^web/usersdata$ web/usersdata.php [NC]
+ReWriteRule ^web/pathology$ web/pathology.php [NC]
+ReWriteRule ^web/services$ web/services.php [NC]
+
+#RewriteRule ^web/usersdata/subpage$ web/usersdata.php?subpage=userviewer [QSA]
+
+#RewriteRule ^web/data/(\d+)$ web/usersdata.php?subpage=userviewer&data=$1 [QSA]
+
+
+
+#RewriteRule ^index(|/)$ index.php
+#RewriteRule ^index/(.*)$ index.php?id=$1
+
+
+
+
+</IfModule> 
+
+
+## AuthType Basic
+##AuthName "Restricted Files"
+##AuthUserFile /etc/phpmyadmin/.htpasswd
+##Require valid-user
