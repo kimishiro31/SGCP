@@ -81,16 +81,18 @@ Observação: o ambiente que estaremos será configurado desde a sua instalaçã
   > Após a execução do comando, ele fará as seguintes pergunta
   > 1) Enter password for user root:
   > R1) Digite a sua senha, que você colocou no root do mysql.
-  > 2) Change the password for root ?
-  > R2) Digite não, pois acabamos de adicionar uma senha no root.
-  > 3) Remove anonymous users? (Press y|Y for Yes, any other key for No) :
-  > R3) Digite yes, ele removerá acesso do usuári anônimo
-  > 4) Disallow root login remotely? (Press y|Y for Yes, any other key for No) :
-  > R4) Digite yes, pois ele irá ajudar a manter o root mais seguro
-  > 5) Remove test database and access to it? (Press y|Y for Yes, any other key for No) :
-  > R5) Digite yes, pois ele removera a database de test
-  > 6) Reload privilege tables now? (Press y|Y for Yes, any other key for No) : 
-  > R6) Digite yes, pois ele ira dar um refresh.  
+  > 2) Press y|Y for Yes, any other key for No: 
+  > R2) Digite no, isso fará com que o padrão de senha permaneça do jeito default
+  > 3) Change the password for root ?
+  > R3) Digite não, pois acabamos de adicionar uma senha no root.
+  > 4) Remove anonymous users? (Press y|Y for Yes, any other key for No) :
+  > R4) Digite yes, ele removerá acesso do usuári anônimo
+  > 5) Disallow root login remotely? (Press y|Y for Yes, any other key for No) :
+  > R5) Digite yes, pois ele irá ajudar a manter o root mais seguro
+  > 6) Remove test database and access to it? (Press y|Y for Yes, any other key for No) :
+  > R6) Digite yes, pois ele removera a database de test
+  > 7) Reload privilege tables now? (Press y|Y for Yes, any other key for No) : 
+  > R7) Digite yes, pois ele ira dar um refresh.  
   ```barsh
   sudo mysql_secure_installation
   ```
@@ -104,22 +106,10 @@ Observação: o ambiente que estaremos será configurado desde a sua instalaçã
   sudo apt update && sudo apt upgrade -y
   ```
   
-  Instalando serviços que serão necessário:
-  ```barsh
-  sudo apt-get install  ca-certificates apt-transport-https software-properties-common -y
-  ```
-  
   Baixando o repositório do PhP:
   > Aperte a tecla [ENTER], caso solicite após a execução do comando abaixo
   ```barsh
-  sudo add-apt-repository ppa:ondrej/php
-  ```
-  
-  Instalando serviços que serão necessário:
-  > Caso o sistema te pergunte algo, responda com **Y** 
-  ```barsh
-  sudo apt update
-  sudo apt install php8.0 libapache2-mod-php8.0 php8.0-mysql php8.0-mbstring php8.0-zip php8.0-gd php8.0-curl
+  sudo apt install php libapache2-mod-php php-mysql
   ```
   
   Reinicie o sistema Apache, para que sincronize com o PhP instalado:
