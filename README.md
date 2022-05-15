@@ -74,6 +74,7 @@ Observação: o ambiente que estaremos será configurado desde a sua instalaçã
   ```barsh
   sudo mysql
   ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'SUASENHA';
+  SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
   exit
   ```
 
