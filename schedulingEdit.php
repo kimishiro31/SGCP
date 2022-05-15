@@ -324,7 +324,7 @@
                         }
                     ?>
                     <?php
-                        if(isSchedulingServicePerformed($schedule_ID) === true && isAdmin(getAccountID($user_ID))) {
+                        if(isSchedulingServicePerformed($schedule_ID) === true && isAdmin($user_data['id'])) {
                     ?>
                         <td class="generic-tExclusion" colspan="2">           
                             <form action="" method="POST">

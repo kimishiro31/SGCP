@@ -76,7 +76,7 @@ function doCreateUserFolder($cpf) {
 	if (getSystemWindows()) 
 		$dir = 'engine/users/images/';
 	else 
-		$dir = '/var/www/html/web/engine/users/images/';
+		$dir = '/var/www/html/engine/users/images/';
 	
 	if (is_dir($dir.'/'.$cpf) === false)
 		mkdir($dir.'/'.$cpf, 0777, true);
@@ -88,7 +88,7 @@ function getUserFolder($cpf) {
 	if (getSystemWindows()) 
 		$dir = 'engine/users/images';
 	else 
-		$dir = '/var/www/html/web/engine/users/images';
+		$dir = '/var/www/html/engine/users/images';
 	
 	$dirFiles = $dir.'/'.$cpf;
 	return (is_dir($dirFiles)) ? $dirFiles : false;
@@ -101,7 +101,7 @@ function getUserFolderForIMG($cpf) {
 	if (getSystemWindows()) 
 		$dir = 'engine/users/images';
 	else 
-		$dir = '/web/engine/users/images';
+		$dir = '/engine/users/images';
 	
 	$dirFiles = $dir.'/'.$cpf;
 	

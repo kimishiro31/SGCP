@@ -141,7 +141,7 @@ if (($subpage == 'register') && getToken('registerUser')) {
 		);
 
 	    doCreateUser($register_data);
-        $response = output_msgs("O cadastro foi efetuado com sucesso, você será redirecionado para a lista de usuários agora.", "usersdata.php");
+        $response = output_msgs("O cadastro foi efetuado com sucesso, você será redirecionado para a lista de usuários agora.", "usersList.php");
 	}
 	
 	// se as validações passaram com erros entra aqui

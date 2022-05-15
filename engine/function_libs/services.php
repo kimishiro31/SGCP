@@ -28,7 +28,7 @@ isServiceExist($service_ID)
 Descrição: Verifica se existe o servico, retorna true ou false
 */
 function isServiceExist($service_ID) {
-	$query = mysql_select_single("SELECT `id` FROM `agendamentos` WHERE `id`='$service_ID';");
+	$query = mysql_select_single("SELECT `id` FROM `servicos` WHERE `id`='$service_ID';");
 
 	return ($query) ? true : false;
 }
